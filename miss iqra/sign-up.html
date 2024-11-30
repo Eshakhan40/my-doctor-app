@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-form">
+        <div class="mt-5">
+          <h2 class="text-center">Book a Doctor Appointment</h2>
+          <form action="#" method="POST" class="mt-4">
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label for="patient-name" class="form-label">Full Name</label>
+              <input type="text" id="patient-name" name="patient-name" class="form-control" placeholder="Enter your full name" required>
+            </div>
+  
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+  
+            <!-- Phone Number -->
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+  
+            <!-- Select Doctor's Specialty -->
+            <div class="mb-3">
+              <label for="specialty" class="form-label">Select Doctor's Specialty</label>
+              <select class="form-select" id="specialty" name="specialty" required>
+                <option value="" disabled selected>Select a specialty</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Dermatology">Dermatology</option>
+              </select>
+            </div>
+  
+            <!-- Date & Time -->
+            <div class="mb-3">
+              <label for="appointment-time" class="form-label">Appointment Date & Time</label>
+              <input type="datetime-local" id="appointment-time" name="appointment-time" class="form-control" required>
+            </div>
+  
+            <!-- Additional Notes -->
+            <div class="mb-3">
+              <label for="notes" class="form-label">Additional Notes</label>
+              <textarea id="notes" name="notes" class="form-control" rows="3" placeholder="Any additional notes or medical history"></textarea>
+            </div>
+  
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+          </form>
+        </div>
+      </div>
+      <script src="app.js"></script>
+      <script type="module" src="script.js"></script>
+</body>
+</html>
